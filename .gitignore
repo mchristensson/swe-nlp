@@ -281,5 +281,6 @@ build/
 
 ### Custom
 swedish-pos-tagger-model
+swedish-depparse-model
 swedish-pos-tagger-model.props
 pairs.txt

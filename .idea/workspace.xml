@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f47d80d2-a98c-4c24-9052-70b6a18ac1a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/copyrighted/training/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/copyrighted/training/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/GenerateWordEmbedding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/MaxentTaggerWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ModelFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/swenlp.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/se/org/mac/swenlp/ExtractSentenceTagsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankLanguagePack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/SweNlpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/GenerateWordEmbedding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/org/mac/swenlp/ExtractSentenceTagsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/org/mac/swenlp/ExtractSentenceTagsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,6 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -72,13 +63,20 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.stanford.nlp.parser.lexparser" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MagnusCh\dev\usr-test-repos\nlp-swe\copyrighted\training" />
+      <recent name="C:\Users\MagnusCh\dev\usr-test-repos\nlp-swe" />
       <recent name="C:\Users\MagnusCh\dev\usr-test-repos\nlp-swe\src\test\resources\wordembedding" />
       <recent name="C:\Users\MagnusCh\dev\usr-test-repos\nlp-swe\lib" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="se.org.mac.swenlp.SweNlpUtil" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="se.org.mac.swenlp" />
@@ -90,8 +88,8 @@
       <command value="mvn validate" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExtractSentenceTagsTest.analysis">
-    <configuration name="ExtractSentenceTagsTest.analysis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ExtractSentenceTagsTest.analysisDepParsning">
+    <configuration name="ExtractSentenceTagsTest.analysisDepParsning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nlp-swe" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +99,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="se.org.mac.swenlp" />
       <option name="MAIN_CLASS_NAME" value="se.org.mac.swenlp.ExtractSentenceTagsTest" />
-      <option name="METHOD_NAME" value="analysis" />
+      <option name="METHOD_NAME" value="analysisDepParsning" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtractSentenceTagsTest.applyModel_whenAllArgsPresent_expect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtractSentenceTagsTest.extractModelFile_whenModelPresent_expectUnarchived" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nlp-swe" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +115,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="se.org.mac.swenlp" />
       <option name="MAIN_CLASS_NAME" value="se.org.mac.swenlp.ExtractSentenceTagsTest" />
-      <option name="METHOD_NAME" value="applyModel_whenAllArgsPresent_expect" />
+      <option name="METHOD_NAME" value="extractModelFile_whenModelPresent_expectUnarchived" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtractSentenceTagsTest.tagSentence_whenSentenceDefined_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExtractSentenceTagsTest.stripComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nlp-swe" />
       <extension name="coverage">
         <pattern>
@@ -133,7 +131,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="se.org.mac.swenlp" />
       <option name="MAIN_CLASS_NAME" value="se.org.mac.swenlp.ExtractSentenceTagsTest" />
-      <option name="METHOD_NAME" value="tagSentence_whenSentenceDefined_" />
+      <option name="METHOD_NAME" value="stripComments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtractSentenceTagsTest.trainForDepParsning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nlp-swe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.org.mac.swenlp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.org.mac.swenlp" />
+      <option name="MAIN_CLASS_NAME" value="se.org.mac.swenlp.ExtractSentenceTagsTest" />
+      <option name="METHOD_NAME" value="trainForDepParsning" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,29 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExtractSentenceTagsTest.trainSrParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nlp-swe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.org.mac.swenlp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="se.org.mac.swenlp" />
-      <option name="MAIN_CLASS_NAME" value="se.org.mac.swenlp.ExtractSentenceTagsTest" />
-      <option name="METHOD_NAME" value="trainSrParser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExtractSentenceTagsTest.analysis" />
-        <item itemvalue="JUnit.ExtractSentenceTagsTest.tagSentence_whenSentenceDefined_" />
-        <item itemvalue="JUnit.ExtractSentenceTagsTest.applyModel_whenAllArgsPresent_expect" />
+        <item itemvalue="JUnit.ExtractSentenceTagsTest.analysisDepParsning" />
+        <item itemvalue="JUnit.ExtractSentenceTagsTest.trainForDepParsning" />
         <item itemvalue="JUnit.ExtractSentenceTagsTest.trainFromConllu_whenPropertiesFilePresent_expectModelCreated" />
-        <item itemvalue="JUnit.ExtractSentenceTagsTest.trainSrParser" />
+        <item itemvalue="JUnit.ExtractSentenceTagsTest.stripComments" />
+        <item itemvalue="JUnit.ExtractSentenceTagsTest.extractModelFile_whenModelPresent_expectUnarchived" />
       </list>
     </recent_temporary>
   </component>
@@ -210,12 +208,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
-          <line>197</line>
+          <line>209</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
-          <line>203</line>
+          <line>215</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -234,9 +232,79 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/pipeline/DependencyParseAnnotator.class</url>
-          <line>40</line>
-          <option name="timeStamp" value="30" />
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>608</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>619</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>623</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>554</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>545</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>518</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>506</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>604</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/Config.class</url>
+          <line>104</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/international/Language.class</url>
+          <line>92</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/international/Language.class</url>
+          <line>98</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/lexparser/AbstractTreebankParserParams.class</url>
+          <line>59</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

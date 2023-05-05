@@ -1,7 +1,7 @@
 package se.org.mac.swenlp;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.util.zip.GZIPInputStream;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +37,24 @@ class ExtractSentenceTagsTest {
     }
 
     @Test
+    void extractModelFile_whenModelPresent_expectUnarchived() {
+        try {
+            FileInputStream fileInputStream = new FileInputStream("swedish-pos-tagger-model");
+            GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
+            logger.debug("Begin reading model file...");
+            try (BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(gzipInputStream))) {
+                logger.debug(reader.readLine());
+            }
+
+            gzipInputStream.close();
+            fileInputStream.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Test
     void tagSentence_whenSentenceDefined_() {
         String testMening1 = "Det här är en exempelmening";
         ExtractSentenceTags extractSentenceTags = new ExtractSentenceTags().setModelName(
@@ -46,10 +64,40 @@ class ExtractSentenceTagsTest {
     }
 
     @Test
-    void analysis() {
+    void analysisDepParsning() {
         String text = "det är frukost på taket";
         ExtractSentenceTags extractSentenceTags = new ExtractSentenceTags();
-        extractSentenceTags.analysisWithModel(text);
+        extractSentenceTags.performDepParsing(text);
     }
 
+    @Test
+    void trainForDepParsning() {
+        SweNlpUtil.filterRowsInFile('#', "copyrighted/training/sv_talbanken-ud-dev.conllu",
+                "copyrighted/training/sv_talbanken-ud-dev.filtered.conllu", false);
+        ExtractSentenceTags extractSentenceTags = new ExtractSentenceTags();
+
+        extractSentenceTags.setInputClasspathPropertiesFile("swenlp.properties");
+        extractSentenceTags.setInputDevData(
+                "copyrighted/training/sv_talbanken-ud-dev.filtered.conllu");
+        extractSentenceTags.setInputTrainData("copyrighted/training/sv_talbanken-ud-train.conllu");
+        extractSentenceTags.setModelName("swedish-depparse-model");
+        //  extractSentenceTags.setEmbeddingFile("swedish.word2vec.model.txt");
+        extractSentenceTags.setEmbeddingSize(50);
+        extractSentenceTags.setTrainingThreads(8);
+        extractSentenceTags.setMaxIterations(10);
+        extractSentenceTags.setLanguage("Swedish");
+
+        extractSentenceTags.trainForDepParsning();
+
+        File f = new File("swedish-depparse-model");
+        assertTrue(f.exists(), "Model file was not created");
+        assertTrue(f.exists(), "Model properties file was not created");
+    }
+
+    @Test
+    void strip() {
+        ExtractSentenceTags extractSentenceTags = new ExtractSentenceTags();
+        SweNlpUtil.filterRowsInFile('#', "copyrighted/training/sv_talbanken-ud-dev.conllu",
+                "copyrighted/training/sv_talbanken-ud-dev.filtered.conllu", false);
+    }
 }
