@@ -113,26 +113,26 @@ public class ExtractSentenceTags {
      */
     public void trainForDepParsning() {
 
-        Language langs = Language.Swedish;
+
         Properties props = SweNlpUtil.getProperties(inputClasspathPropertiesFile);
-        props.setProperty("-trainFile", inputTrainData);
-        props.setProperty("-devFile", inputDevData);
-        props.setProperty("-model", modelName);
-        props.setProperty("-numPreComputed", "5"); //TODO: create property in this wrapper
+        props.setProperty("trainFile", inputTrainData);
+        props.setProperty("devFile", inputDevData);
+        props.setProperty("model", modelName);
+        props.setProperty("numPreComputed", "5"); //TODO: create property in this wrapper
         if (this.embeddingFile != null) {
             props.setProperty("-embedFile", this.embeddingFile);
         }
         if (this.maxIterations > -1) {
-            props.setProperty("-maxIter", String.valueOf(this.maxIterations));
+            props.setProperty("maxIter", String.valueOf(this.maxIterations));
         }
         if (this.embeddingSize > -1) {
-            props.setProperty("-embeddingSize", String.valueOf(this.embeddingSize));
+            props.setProperty("embeddingSize", String.valueOf(this.embeddingSize));
         }
         if (this.trainingThreads > -1) {
-            props.setProperty("-trainingThreads", String.valueOf(this.trainingThreads));
+            props.setProperty("trainingThreads", String.valueOf(this.trainingThreads));
         }
         if (!StringUtils.isBlank(this.language)) {
-            props.setProperty("-language", this.language);
+            props.setProperty("language", this.language);
         }
         String[] args = SweNlpUtil.propertiesToArgs(props);
 
@@ -189,9 +189,13 @@ public class ExtractSentenceTags {
         Properties props = SweNlpUtil.getProperties("swenlp.properties"); //TODO: Parametrize
         //props.setProperty("annotators", "tokenize, ssplit, pos, parse, ner, depparse, sentiment");
         props.setProperty("parse.debug", "true");
+        props.setProperty("depparse.debug", "true");
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma, depparse");
         props.setProperty("pos.model", "swedish-pos-tagger-model");  //TODO: Parametrize
         props.setProperty("depparse.model", "swedish-depparse-model"); //TODO: Parametrize
+        if (!StringUtils.isBlank(this.language)) {
+            props.setProperty("depparse.language", this.language);
+        }
         //props.setProperty("parse.model", "swedish-pos-tagger-model");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
@@ -201,6 +205,8 @@ public class ExtractSentenceTags {
         //Annotation document = new Annotation(testText);
 
         pipeline.annotate(document);
+
+//^([A-Za-zåäö]*\s+[A-Za-zåäö])
 
 
         // Hämta alla meningar i dokumentet

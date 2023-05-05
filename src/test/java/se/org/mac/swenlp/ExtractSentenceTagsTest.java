@@ -67,6 +67,7 @@ class ExtractSentenceTagsTest {
     void analysisDepParsning() {
         String text = "det är frukost på taket";
         ExtractSentenceTags extractSentenceTags = new ExtractSentenceTags();
+        extractSentenceTags.setLanguage("Swedish");
         extractSentenceTags.performDepParsing(text);
     }
 

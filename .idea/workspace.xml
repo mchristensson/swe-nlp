@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f47d80d2-a98c-4c24-9052-70b6a18ac1a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankLanguagePack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/SweNlpUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/GenerateWordEmbedding.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/org/mac/swenlp/ExtractSentenceTagsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/org/mac/swenlp/ExtractSentenceTagsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,12 +204,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
-          <line>209</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
-          <line>215</line>
+          <line>221</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -230,11 +221,6 @@
           <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
           <line>1197</line>
           <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
-          <line>608</line>
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
@@ -257,54 +243,49 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
-          <line>518</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
-          <line>506</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
-          <line>604</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/Config.class</url>
-          <line>104</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
           <line>115</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/international/Language.class</url>
-          <line>92</line>
-          <option name="timeStamp" value="60" />
+          <url>file://$PROJECT_DIR$/src/main/java/se/org/mac/swenlp/ExtractSentenceTags.java</url>
+          <line>215</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/international/Language.class</url>
-          <line>98</line>
-          <option name="timeStamp" value="61" />
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>570</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/lexparser/AbstractTreebankParserParams.class</url>
-          <line>59</line>
-          <option name="timeStamp" value="63" />
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>522</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/stanford/nlp/parser/lexparser/SwedishTreebankParserParams.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="64" />
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>525</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>519</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>507</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>512</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/4.4.0/stanford-corenlp-4.4.0.jar!/edu/stanford/nlp/parser/nndep/DependencyParser.class</url>
+          <line>604</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
